@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="darkmode" onclick="">
+        <ion-icon name="contrast" id="icon"></ion-icon>
+    </div>
+    <div class="calculator">
+        <div class="button">
+            <h2 id="value"></h2>
+            <span id="clear">Clear</span>
+            <span id="divide">/</span>
+            <span id="multiply">*</span>
+            <span>9</span>
+            <span>8</span>
+            <span>7</span>
+            <span id="minus">-</span>
+            <span>6</span>
+            <span>5</span>
+            <span>4</span>
+            <span id="plus">+</span>
+            <span>3</span>
+            <span>2</span>
+            <span>1</span>
+            <span>0</span>
+            <span>00</span>
+            <span>.</span>
+            <span id="equal">=</span>
+        </div>
+    </div>
+    <script src="link.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    let body= document.querySelector('body');
+    let darkmode= document.querySelector('.darkmode');
+    darkmode.onclick = function(){
+    body.classList.toggle('dark');
+        if(body.classList.contains('dark')){
+            icon.src="contrastoutline.png"
+            document.getElementsByClassName('calculator')[0].style.backgroundColor="black";
+    
+}  
+else{
+    icon.src="<ion-icon name='contrast' id=icon'></ion-icon>"
+    document.getElementsByClassName('calculator')[0].style.backgroundColor="white" ;
+}
+    
+
+}
+
+</script>
+</body>
+</html>

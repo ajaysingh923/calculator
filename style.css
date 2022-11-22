@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background: white;
+}
+.darkmode{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.dark{
+    background-color: black;
+    color: white;
+
+}
+.contrast{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.calculator{
+    position: relative;
+    padding: 20px;
+    width: 350px;
+    overflow: none;
+    background: #fff;
+    border-radius: 17px;
+    box-shadow: 15px 15px 20px  gray,
+                -15px -15px 20px whitesmoke;
+}
+.calculator .button{
+    position: relative;
+    display: grid;
+    overflow: none;
+}
+.calculator .button #value{
+    position: relative;
+    grid-column: span 4;
+    overflow: none;
+    user-select: none;
+    text-align: end;
+    height: 100px;
+    width: 94.5%;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.1),
+                inset -5px -5px 5px 5px #fffb;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 2.5em;
+    font-weight: bold ;
+}
+span{
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    box-shadow:  5px 5px 10px 5px rgba(0, 0, 0, 0.1),
+                 -5px -5px 5px 5px #fffb;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    font-weight: bold;
+    font-size: 1em;
+    text-shadow: 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+    border: 2px solid whitesmoke;
+  
+}
+span:active{
+    box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.1),
+                inset -5px -5px 10px 5px   #fffb;
+}
+#clear{
+    grid-column: span 2;
+    background-color: orangered;
+}
+#divide{
+    background-color: lightblue;
+}
+#plus{
+    grid-row: span 2;
+    background-color: yellow;
+}
+#equal{
+    background-color: rgb(99, 149, 241);
+}
+#multiply{
+    background-color: lightgreen;
+}
+#minus{
+    background-color: wheat;
+}
+#clear:active , #plus:active , #equal:active , #multiply:active{
+    box-shadow:  5px 5px 10px 5px rgba(0, 0, 0, 0.1),
+     -5px -5px 5px 5px   #fffb,
+     inset 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
